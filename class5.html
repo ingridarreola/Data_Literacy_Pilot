@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Literacy - Class 5</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown id="class-five" data-menu-title="Today's Lesson: How Charts Lie - 1. It's Poorly Designed"> 
+					<script type="text/template">
+					# In this class, we will cover -- <!-- .element: class="r-fit-text"-->
+					- What's Going on In This Graph? 
+					- Review: Chart Scaffolding, How to Read a Chart
+					- How Charts Lie
+						1️⃣ it's poorly designed <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="graph_class5" data-menu-title="What's Going on In This Graph?">
+					<script type="text/template">
+						<sup><sub> 1. What do you notice? </sub></sup>
+						<sup><sub> 2. What do you wonder? </sub></sup>
+						<sup><sub> 3. How does this relate to you and your community? </sub></sup>  <sup><sub> 4. What’s going on in this graph? </sub></sup>
+
+						<sup><sub>[Source: New York Times](https://www.nytimes.com/2022/01/13/learning/whats-going-on-in-this-graph-jan-19-2022.html)</sub></sup>
+						
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/ShiftingPopulationGraph_NYT_Graph_of_Day.png?raw=true' height="50%" width="50%" alt="population_change">
+						
+						notes: This map compares the populations of white people and people of color from the 2010 and 2020 censuses. Each arrow shows the percentage change for county census tracts with a change of more than 1 percent. Census tracts are geographic regions that are designated by the Census Bureau and have, on average, about 4,000 people, though they can range in size from 1,200 to 8,000 people. Note that for this map, white is defined as non-Hispanic white.
+					</script>
+				</section>
+                <section data-markdown id="how-charts-lie-1" data-menu-title="How Do Charts Lie? - 1">
+					<script type="text/template">
+						<sup><sub> Now that we've reviewed how to read a chart, it's also important to know that: </sup></sub>
+
+						<sup><sub> "Any chart, no matter how well designed, will mislead us if we don't pay attention to it." </sup></sub> <!-- .element: class="fragment" -->
+						
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: "What happens after we do pay attention to a chart? We need to be able to read it. Before we learn how charts lie, we must learn how they are supposed to work when they are appropriately built." (Alberto Cairo, _The Truthful Art_, pg 21)
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-2" data-menu-title="How Do Charts Lie? - 2">
+					<script type="text/template">
+						<sup><sub> We've been practicing learning how to read charts. Despite this it's still possible for a chart to lie because: </sup></sub>
+
+						<sup><sub> - It's poorly designed </sup></sub> <!-- .element: class="fragment" -->
+                        <br/>
+                        <sup><sub> - It uses the wrong data </sup></sub> <!-- .element: class="fragment" -->
+                        <br/>
+                        <sup><sub> - It shows an inappropriate amount of data -- either too little or too much </sup></sub> <!-- .element: class="fragment" -->
+                        <br/>
+                        <sup><sub> - It conceals or confuses uncertainty </sup></sub> <!-- .element: class="fragment" -->
+                        <br/>
+                        <sup><sub> - It suggests misleading patterns </sup></sub> <!-- .element: class="fragment" -->
+                        <br/>
+                        <sup><sub> - It panders to our expectations or prejudices </sup></sub> <!-- .element: class="fragment" -->						
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: We've been focused on learning how to read charts. While all of these are foundations for data literacy, it's important to know that it's still possible for a chart to lie because of several reasons. We'll go into detail on each of these in this class.
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-3" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed">
+					<script type="text/template">
+						<sup><sub> It's possible for a chart to lie because ➡️  it's poorly designed </sup></sub>
+
+						<sup><sub> Visual distortions can make it difficult to read a chart appropriately </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%201.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design"> 
+
+						notes: It's possible for a chart to lie because it's poorly designed. In this example the visual distortion here makes it difficult to read a chart appropriately, which can lead this to be misinterpreted. Sometimes this is done intentionally, sometimes it is not intentional. In this example there isn't a scale and the 3D layout makes it very hard to compare which bars are taller and lower.
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-3-example" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Example">
+					<script type="text/template">
+						<sup><sub> It's possible for a chart to lie because ➡️  it's poorly designed </sup></sub>
+
+						<sup><sub> Chart distortions are usually the result of messing with the scales and proportions </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%202.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_2"> 
+
+						notes: Charts can lie because of poor design, and in this example the chart distortion is the 3D pie. It's difficult to tell whether this piece of the pie is smaller or larger in comparison to the whole. 
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-3-example-continued" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Example 2">
+					<script type="text/template">
+						<sup><sub> It's possible for a chart to lie because ➡️  it's poorly designed </sup></sub>
+
+						<sup><sub> Chart distortions are usually the result of messing with the scales and proportions </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%203.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_3"> 
+
+						notes: Charts can lie because of poor design, and in this example the chart distortion is the 3D layout of the various data points. There is a scale which is helpful, and illustrates how easy it can be to visually distort a chart. Compare the first data point and final data point. They are both relatively close to 35 million, however the visual distortion makes it appear like there's a bigger difference in value between them. 
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-3-example-conclusion" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Example 3">
+					<script type="text/template">
+						<sup><sub> Review these charts and see how they differ compared to the distorted charts we just reviewed. What do you notice? What is different about these charts? </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Remade.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_3"> 
+
+						notes: Charts can lie because of poor design, such as visual distortion which is usually the result of messing with the scales and proportions of a chart. If we remove the exaggerated perspective, the height of the bars will be proportional to the data.  
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-distortion-continued" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Scales & Proportions Example 2">
+					<script type="text/template">
+						<sup><sub> The example below shows the same data points on a new scale. How has the scale changed? How has the design affected the way you perceive the data points? </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Chart%20Distortion%20Fix%201.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_example_two"> 
+
+						notes: The design of a graphic depends on the nature of the data. Since we're looking at the graduation rate, it makes sense to place this on a scale that goes from 0% to 100%. With the new change, it's visible that there has been such a change in the graduation rate. 
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-distortion-more" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Scales & Proportions Example 3">
+					<script type="text/template">
+						<sup><sub> The example below provides additional context on this data point. How has the x-axis changed? How has the design affected the way you see the data points? </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Chart%20Distortion%20Fix%202.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_example_two"> 
+
+						notes: The x-scale here has extended into additional years for more context. The previous examples started with the 2007-2008 school year, while this example includes data extends back decades to show the change over time.
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-distortion-conclusion" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Scales & Proportions - Summary">
+					<script type="text/template">
+						<sup><sub> Focusing on the scaffolding of a chart -- it's scales and legends -- before decoding its content will help identify distortions. </sup></sub>
+
+						<sup><sub> Charts that get distorted because of inconsistent scales are not harmless, whether it's intentional or not. Charts can lie because it's poorly designed. </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Chart%20Distortion%20Fix%202.png?raw=true' height="55%" width="55%" class="fragment" alt="charts_poor_design_example_two"> 
+
+						notes: Charts that get distorted because of inconsistent scales are not harmless, whether it's intentional or not. Charts can lie because it's poorly designed. This is why reading the scaffolding of the chart is important.
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-design-deceptive-example-1" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Deceptive Example">
+					<script type="text/template">
+						<sup><sub> What do you notice about the scaffolding in this example? What do these charts reveal and do you think they are deceptive or truthful?  </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Deceptive.png?raw=true' height="17%" width="17%" class="fragment" alt="charts_poor_design_deceptive_example"> 
+
+						notes: Remember that focusing on the scaffolding of a chart -- it's scales and legends -- before decoding its content will help identify distortions. Look at the scaffolding of the top chart, what do you notice? Is this the same information as the second chart? What does the scaffolding of the third chart reveal? Do you think these charts are deceptive -- in what ways?
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-design-correct-example-1" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Alternate Example">
+					<script type="text/template">
+						<sup><sub> What do these charts reveal and do you think they are deceptive or truthful? In what ways are these charts different than the previous example?  </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Correct.png?raw=true' height="17%" width="17%" class="fragment" alt="charts_poor_design_alternate_example"> 
+
+						notes: Remember that focusing on the scaffolding of a chart -- it's scales and legends -- before decoding its content will help identify distortions. Look at the scaffolding of the top chart, what do you notice? Is this the same information as the second chart? What does the scaffolding of the third chart reveal? Do you think these charts are deceptive -- truthful -- in what ways?
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-design-complete-example-1" data-menu-title="How Do Charts Lie? - 1. It's Poorly Designed ➡️ Complete Example">
+					<script type="text/template">
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie*  </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Correct%20and%20Deceptive%20Complete.png?raw=true' height="45%" width="45%" class="fragment" alt="charts_poor_design_complete_example"> 
+
+						notes: This shows the two versions together. Now that you see these examples together, what do you think about the difference between the scaffolding in these versions?
+
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-1-recall-end" data-menu-title="1 Minute Summary & Muddiest Point">
+					<script type="text/template">
+						<sup><sub> 1. Take one minute to write down what you're confused about </sup></sub>
+
+						<sup><sub> 2. Take one minute to write down what you have understood from the last few slides in this lesson </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/one_minute_summary.png?raw=true' height="20%" width="20%" class="fragment" alt="one_min_summary"> 
+
+						<sup><sub> Photo by [Gaelle Marcel](https://unsplash.com/@gaellemarcel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) </sub></sup>
+
+						notes: This is an activity to give students a quick break and think about the past few slide about visual encoding. Have students write down what they're confused about. Next, let's discuss to see if we can clarify the concepts we just covered. <br/> Take a minute to have the students write a summary of the last few slides we've just reviewed.
+
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-2-guideline" data-menu-title="How Do Charts Lie? - 2. Uses the Wrong Data">
+					<script type="text/template">
+						<sup><sub> How Do Charts Lie? </sup></sub>
+
+						<sup><sub> 2️⃣ It's possible for a chart to lie because ➡️  it uses the wrong data </sup></sub>
+						
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-3-guideline" data-menu-title="How Do Charts Lie? - 3. Wrong Amount of Data">
+					<script type="text/template">
+						<sup><sub> How Do Charts Lie? </sup></sub>
+
+						<sup><sub> 3️⃣ It's possible for a chart to lie because ➡️  it uses an inappropriate amount data ➡️  either too little or too much </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-4-guideline" data-menu-title="How Do Charts Lie? - 4. Conceals or Confuses Uncertainty">
+					<script type="text/template">
+						<sup><sub> How Do Charts Lie? </sup></sub>
+
+						<sup><sub> 4️⃣ It's possible for a chart to lie because ➡️  it conceals or confuses uncertainty </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-5-guideline" data-menu-title="How Do Charts Lie? - 5. Misleading Patterns">
+					<script type="text/template">
+						<sup><sub> How Do Charts Lie? </sup></sub>
+
+						<sup><sub> 5️⃣ It's possible for a chart to lie because ➡️  it suggests misleading patterns </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-6-guideline" data-menu-title="How Do Charts Lie? - 6. Enforces Prejudices">
+					<script type="text/template">
+						<sup><sub> How Do Charts Lie? </sup></sub>
+
+						<sup><sub> 6️⃣ It's possible for a chart to lie because ➡️  it panders to our expectations or prejudices </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+
+
+                <!-- Include the class links at end of each presentation -->
+				<section data-menu-title="Class Links">
+					<h3>Data Literacy Class Links</h3>
+					<ul>
+					  <li><a href="index.html">View Other Classes</a></li>
+					</ul>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/audio-slideshow/plugin.js"></script>
+		<script src="plugin/audio-slideshow/recorder.js"></script>
+		<script src="plugin/audio-slideshow/RecordRTC.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				history: true,
+				slideNumber: 'c/t',
+				loop: true,
+				transition: 'fade',
+				audio: {
+						prefix: 'audio/', 	// audio files are stored in the "audio" folder
+						suffix: '.ogg',		// audio files have the ".ogg" ending
+						textToSpeechURL: "http://api.voicerss.org/?key=23816d453df4488b81c197d547505c72&hl=en-gb&c=ogg&src=",  // the URL to the text to speech converter
+						defaultNotes: false, 	// use slide notes as default for the text to speech converter
+						defaultText: true, 	// use slide text as default for the text to speech converter
+						advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+						autoplay: false,	// automatically start slideshow
+						defaultDuration: 5,	// default duration in seconds if no audio is available
+						defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+						playerOpacity: 0.05,	// opacity value of audio player if unfocused
+						playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+						startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+					},
+				menu: {
+    					// Specifies which side of the presentation the menu will be shown. Use 'left' or 'right'.
+    					side: 'left',
+
+    					// Specifies the width of the menu. Can be one of the following: 'normal', 'wide', 'third', 'half', 'full', or any valid css length value
+    					width: 'normal',
+
+    					// Add slide numbers to the titles in the slide list. Use 'true' or format string (same as reveal.js slide numbers)
+    					numbers: false,
+
+    					// Specifies which slide elements will be used for generating the slide titles in the menu. The default selects the first heading element found in the slide, but you can specify any valid css selector and the text from the first matching element will be used. Note: that a section data-menu-title attribute or an element with a menu-title class will take precedence over this option
+    					titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+    					// If slides do not have a matching title, attempt to use the start of the text content as the title instead
+    					useTextContentForMissingTitles: false,
+
+    					// Hide slides from the menu that do not have a title. Set to 'true' to only list slides with titles.
+    					hideMissingTitles: false,
+
+    					// Adds markers to the slide titles to indicate the progress through the presentation. Set to 'false' to hide the markers.
+    					markers: true,
+
+    					// Specify custom panels to be included in the menu, by providing an array of objects with 'title', 'icon' properties, and either a 'src' or 'content' property.
+    					custom: false,
+
+    					// Specifies the themes that will be available in the themes menu panel. Set to 'true' to show the themes menu panel with the default themes list. Alternatively, provide an array to specify the themes to make available in the themes menu panel, for example...
+    					// [
+    					//     { name: 'Black', theme: 'dist/theme/black.css' },
+    					//     { name: 'White', theme: 'dist/theme/white.css' },
+    					//     { name: 'League', theme: 'dist/theme/league.css' },
+    					//     {
+    					//       name: 'Dark',
+    					//       theme: 'lib/reveal.js/dist/theme/black.css',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/monokai.css'
+    					//     },
+    					//     {
+    					//       name: 'Code: Zenburn',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/zenburn.css'
+    					//     }
+    					// ]
+    					//
+    					// Note: specifying highlightTheme without a theme will change the code highlight theme while leaving the presentation theme unchanged.
+    					themes: false,
+						
+    					// Specifies the path to the default theme files. If your presentation uses a different path to the standard reveal layout then you need to provide this option, but only when 'themes' is set to 'true'. If you provide your own list of themes or 'themes' is set to 'false' the 'themesPath' option is ignored.
+    					themesPath: 'dist/theme/',
+						
+    					// Specifies if the transitions menu panel will be shown. Set to 'true' to show the transitions menu panel with the default transitions list. Alternatively, provide an array to specify the transitions to make available in the transitions panel, for example... ['None', 'Fade', 'Slide']
+    					transitions: false,
+						
+    					// Adds a menu button to the slides to open the menu panel. Set to 'false' to hide the button.
+    					openButton: true,
+						
+    					// If 'true' allows the slide number in the presentation to open the menu panel. The reveal.js slideNumber option must be displayed for this to take effect
+    					openSlideNumber: false,
+						
+    					// If true allows the user to open and navigate the menu using the keyboard. Standard keyboard interaction with reveal will be disabled while the menu is open.
+    					keyboard: true,
+						
+    					// Normally the menu will close on user actions such as selecting a menu item, or clicking the presentation area. If 'true', the sticky option will leave the menu open until it is explicitly closed, that is, using the close button or pressing the ESC or m key (when the keyboard interaction option is enabled).
+    					sticky: false,
+						
+    					// If 'true' standard menu items will be automatically opened when navigating using the keyboard. Note: this only takes effect when both the 'keyboard' and 'sticky' options are enabled.
+    					autoOpen: true,
+						
+    					// If 'true' the menu will not be created until it is explicitly requested by calling RevealMenu.init(). Note this will delay the creation of all menu panels, including custom panels, and the menu button.
+    					delayInit: false,
+						
+    					// If 'true' the menu will be shown when the menu is initialised.
+    					openOnInit: false,
+						
+    					// By default the menu will load it's own font-awesome library icons. If your presentation needs to load a different font-awesome library the 'loadIcons' option can be set to false and the menu will not attempt to load the font-awesome library.
+    					loadIcons: true
+  					},
+					  chalkboard: {
+        				boardmarkerWidth: 3,
+        				chalkWidth: 7,
+        				chalkEffect: 1.0,
+        				storage: null,
+        				src: null,
+        				readOnly: false,
+        				messageType: 'broadcast',
+        				toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+        				toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+        				colorButtons: true,
+        				boardHandle: true,
+        				transition: 800,
+        				theme: "whiteboard",
+        				background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+        				grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        				eraser: { src: path + 'img/sponge.png', radius: 20},
+        				boardmarkers : [
+        				        { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+        				        { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+        				        { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+        				        { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+        				        { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+        				        { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+        				],
+        				chalks: [
+        				        { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+        				        { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+        				        { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+        				        { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+        				        { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+        				        { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+        				]
+    				},					
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAudioSlideshow, RevealAudioRecorder, RevealMenu, RevealChalkboard ]
+			});
+		</script>
+	</body>
+</html>
