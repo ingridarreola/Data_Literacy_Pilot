@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Maîtrise des données - Cours 2</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown id="class-two" data-menu-title="Leçon du jour : Principes de la visualisation"> 
+					<script type="text/template">
+					# Dans Ce Cours, Nous Couvrirons -- <!-- .element: class="r-fit-text"-->
+					- Que se passe-t-il dans ce graphique? (What's Going on In This Graph?)  <!-- .element: class="fragment" -->
+					- Revue: Variables Qualitatives versus Variables Quantitatives <!-- .element: class="fragment" -->
+					- Qualités qui créent une bonne visualisation <!-- .element: class="fragment" -->
+					- Qu'est-ce que l'encodage visuel? <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="graph_class2" data-menu-title="Qu'est-ce qui se passe dans ce graphique?">
+					<script type="text/template">
+						<sup><sub> 1. Que remarquez-vous? </sub></sup>
+						<sup><sub> 2. Qu'est-ce qui vous interpelle? </sub></sup>
+
+						<sup><sub> 3. Comment cela se rapporte-t-il à vous et à votre communauté? </sub></sup>  <sup><sub> 4. Que se passe-t-il dans ce graphique? Bonus ➡️  Créez un titre accrocheur qui capture l'idée principale de la carte. </sub></sup>  <!-- .element: class="fragment" -->
+
+						<sup><sub>Source: New York Times</sub></sup>
+	
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/summer_temperatures.PNG?raw=true' height="75%" width="75%" class="fragment" alt="graph of voter interests by age group">
+						
+						notes: pour bien lire un graphique, concentrez-vous sur les éléments qui l'entourent -- l'échafaudage du graphique -- comme les titres, légendes, échelles. Ici, nous voyons plusieurs exemples d'échafaudage avec le contexte près de la flèche, les couleurs utilisées avec les titres et le texte plus grand pour les années
+					</script>
+				</section>
+				<section data-markdown id="review-question-A" data-menu-title="Revue des variables - Question 1">
+					<script type="text/template">
+					Est-ce quantitatif ou qualitatif? ⬇️⬇️  Genres Musicaux <!-- .element: class="r-fit-text" -->					
+					
+					<img data-src="https://raw.githubusercontent.com/ingridarreola/Data-Literacy/master/assets/007%20-%20Data%20Literacy%20-%20Class%202%20-%20Reviewing%20Variables%20-%20Question%20A.png" height="65%" width="65%" class="fragment" alt="qualitative_1">
+					</script>
+				</section>
+				<section data-markdown id="review-question-B" data-menu-title="Revue des variables - Question 2">
+					<script type="text/template">
+					Est-ce quantitatif ou qualitatif? ⬇️⬇️  Nombre de lectures pour une chanson/album <!-- .element: class="r-fit-text" -->					
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%202%20-%20Reviewing%20Variables%20-%20Question%20B.png?raw=true" height="85%" width="75%" class="fragment" alt="qualitative_2">
+					</script>
+				</section>
+				<section data-markdown id="review-solution" data-menu-title="Revue des variables - Solution">
+					<script type="text/template">
+					Est-ce quantitatif ou qualitatif? <!-- .element: class="r-fit-text" -->	
+					- Genres Musicaux = Qualitatif <!-- .element: class="fragment" -->
+					- Nombre de Lectures = Quantitatif <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="good-visualization" data-menu-title="Qu'est-ce qu'une bonne visualisation?">
+					<script type="text/template">
+					Bonne Visualisation <!-- .element: class="r-fit-text" -->
+					1. Information fiable  <!-- .element: data-fragment-index="0" class="fragment" -->
+					2. Encodé visuellement pour que <!-- .element: data-fragment-index="1" class="fragment" --> <span style="color:orange">les motifs pertinents</span> deviennent <!-- .element: data-fragment-index="1" class="fragment" --> <span style="color:orange">remarquables</span>  <!-- .element: data-fragment-index="2" class="fragment" -->
+					3. Organisée de manière à permettre au moins une exploration, lorsque c'est approprié  <!-- .element: data-fragment-index="3" class="fragment" -->
+					4. Présenté de manière attrayante ; n'oubliez pas <!-- .element: data-fragment-index="4" class="fragment" --> <span style="color:orange">l'honnêteté, la clarté, la profondeur</span> <!-- .element: data-fragment-index="5" class="fragment" -->
+
+					<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+					</script>
+				</section>
+				<section data-markdown id="good-visualization-1" data-menu-title="Information fiable">
+					<script type="text/template">
+					# Information Fiable <!-- .element: class="r-fit-text" -->
+					- Posez-vous la question ➡️ d'où proviennent ces données ? (c'est ce qu'on appelle la _source des données_) <!-- .element: class="fragment" -->
+					- Posez-vous la question ➡️ est-ce basé sur une recherche approfondie et honnête ? (qui collecte cette information ?) <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="good-visualization-2" data-menu-title="Encodage visuel des données">
+					<script type="text/template">
+					# Encodage Visuel Des Données <!-- .element: class="r-fit-text" -->
+					- <span style="color:orange">La vision</span> est le sens le plus développé, une grande partie de notre cerveau est consacrée à recueillir, filtrer, traiter, organiser et interpréter des données.
+					</script>
+				</section>
+				<section data-markdown id="good-visualization-2-question" data-menu-title="Encodage visuel des données - Question">
+					<script type="text/template">
+					# Combien de Numéros 1 y a-t-il Dans L'Image Ci-dessous? <!-- .element: class="r-fit-text" -->
+
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Example%201%20Question.png?raw=true" height="45%" width="55%" class="fragment" alt="encoding_exercise_1">
+					</script>
+				</section>
+				<section data-markdown id="good-visualization-2-answer" data-menu-title="Encodage visuel des données - Réponse">
+					<script type="text/template">
+					# Combien de Numéros 1 y a-t-il Dans L'Image Ci-dessous? <!-- .element: class="r-fit-text" -->
+					<span style="color:#1864ab">7</span>
+
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Example%201%20Solution.png?raw=true" height="45%" width="55%" class="fragment" alt="encoding_exercise_1_solution">
+					</script>
+				</section>
+				<section data-markdown id="good-visualization-2-encoding" data-menu-title="Que signifie l'encodage?">
+					<script type="text/template">
+					Que signifie l'Encodage des Données? 🤔 <!-- .element: class="r-fit-text" -->
+					- Cela fait référence au "contenu lui-même -- comment les données sont représentées, ou encodées"
+					- Les informations dans les graphiques ou visualisations sont généralement encodées, ou représentées, avec des formes et des symboles <!-- .element: class="fragment" -->
+					- Par exemple : la hauteur ou la longueur d'un graphique à barres varie et représente une signification, comme dans l'exemple ci-dessous où une barre plus longue représente une population plus importante. <!-- .element: class="fragment" -->
+
+					<sup><sub>Source: Alberto Cairo, *How Charts Lie*</sub></sup>
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Visual%20Encoding%20Example.png?raw=true" height="45%" width="45%" class="fragment" alt="encoding_1">
+
+					</script>
+				</section>
+				<section data-markdown id="exploration" data-menu-title="Exploration">
+					<script type="text/template">
+					La visualisation devrait être conçue pour permettre aux gens d'effectuer des actions significatives basées sur elle, lorsqu'il est approprié, elle révèle des tendances que nous pourrions avoir du mal à voir autrement. <!-- .element: class="r-fit-text" -->
+
+					<sup><sub>Source: New York Times</sub></sup> 
+					<br/>
+					<img src="https://raw.githubusercontent.com/ingridarreola/Data-Literacy/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Exploration%20Example.webp" height="45%" width="45%" class="fragment" alt="qualitative_1">
+					</script>
+				</section>
+				<section data-markdown id="truthful" data-menu-title="Aussi véridique que possible...">
+					<script type="text/template">
+					Une bonne visualisation devrait être aussi véridique que possible en:
+					1. Évitant la tromperie
+					2. Se basant sur une recherche approfondie et honnête
+					</script>
+				</section>
+				<section data-markdown id="truthful-example" data-menu-title="Aussi véridique que possible... Exemple">
+					<script type="text/template">
+					Que remarquez-vous sur ce graphique? <span style="color:orange"> Est-ce aussi véridique que possible? </span>
+
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Honest%20Example%201.png?raw=true" height="95%" width="90%" class="fragment" alt="qualitative_1">
+					<sup><sub>Source: Alberto Cairo, *How Charts Lie*</sub></sup>
+					
+					notes: Une bonne visualisation doit être aussi véridique que possible en ➡️ Évitant la tromperie
+					</script>
+				</section>
+				<section data-markdown id="truthful-example-2" data-menu-title="Aussi véridique que possible... en évitant la tromperie">
+					<script type="text/template">
+					Que remarquez-vous à propos de ce graphique ? <span style="color:orange">En quoi est-ce différent du graphique précédent ?</span>
+
+					<img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%20-%202%20-%20Honest%20Example%201.png?raw=true" height="95%" width="90%" class="fragment" alt="qualitative_1">
+					<sup><sub>Source: Alberto Cairo, *How Charts Lie*</sub></sup>
+					
+					notes: Une bonne visualisation doit être aussi véridique que possible en ➡️ Évitant la tromperie ➡️ ce graphique est différent de sa version précédente car il fournit un contexte supplémentaire et indique clairement qu'aucune donnée n'est disponible pour des périodes spécifiques.
+					</script>
+				</section>
+
+		<!-- Include the class links at end of each presentation -->
+				<section data-menu-title="Liens de la classe">
+					<h3>Liens de la classe</h3>
+					<ul>
+					  <li><a href="index.html">Voir les autres cours</a></li>
+					</ul>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/audio-slideshow/plugin.js"></script>
+		<script src="plugin/audio-slideshow/recorder.js"></script>
+		<script src="plugin/audio-slideshow/RecordRTC.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				history: true,
+				slideNumber: 'c/t',
+				loop: true,
+				transition: 'fade',
+				audio: {
+						prefix: 'audio/', 	// audio files are stored in the "audio" folder
+						suffix: '.ogg',		// audio files have the ".ogg" ending
+						textToSpeechURL: "http://api.voicerss.org/?key=23816d453df4488b81c197d547505c72&hl=en-gb&c=ogg&src=",  // the URL to the text to speech converter
+						defaultNotes: false, 	// use slide notes as default for the text to speech converter
+						defaultText: true, 	// use slide text as default for the text to speech converter
+						advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+						autoplay: false,	// automatically start slideshow
+						defaultDuration: 5,	// default duration in seconds if no audio is available
+						defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+						playerOpacity: 0.05,	// opacity value of audio player if unfocused
+						playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+						startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+					},
+				menu: {
+    					// Specifies which side of the presentation the menu will be shown. Use 'left' or 'right'.
+    					side: 'left',
+
+    					// Specifies the width of the menu. Can be one of the following: 'normal', 'wide', 'third', 'half', 'full', or any valid css length value
+    					width: 'normal',
+
+    					// Add slide numbers to the titles in the slide list. Use 'true' or format string (same as reveal.js slide numbers)
+    					numbers: false,
+
+    					// Specifies which slide elements will be used for generating the slide titles in the menu. The default selects the first heading element found in the slide, but you can specify any valid css selector and the text from the first matching element will be used. Note: that a section data-menu-title attribute or an element with a menu-title class will take precedence over this option
+    					titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+    					// If slides do not have a matching title, attempt to use the start of the text content as the title instead
+    					useTextContentForMissingTitles: false,
+
+    					// Hide slides from the menu that do not have a title. Set to 'true' to only list slides with titles.
+    					hideMissingTitles: false,
+
+    					// Adds markers to the slide titles to indicate the progress through the presentation. Set to 'false' to hide the markers.
+    					markers: true,
+
+    					// Specify custom panels to be included in the menu, by providing an array of objects with 'title', 'icon' properties, and either a 'src' or 'content' property.
+    					custom: false,
+
+    					// Specifies the themes that will be available in the themes menu panel. Set to 'true' to show the themes menu panel with the default themes list. Alternatively, provide an array to specify the themes to make available in the themes menu panel, for example...
+    					// [
+    					//     { name: 'Black', theme: 'dist/theme/black.css' },
+    					//     { name: 'White', theme: 'dist/theme/white.css' },
+    					//     { name: 'League', theme: 'dist/theme/league.css' },
+    					//     {
+    					//       name: 'Dark',
+    					//       theme: 'lib/reveal.js/dist/theme/black.css',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/monokai.css'
+    					//     },
+    					//     {
+    					//       name: 'Code: Zenburn',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/zenburn.css'
+    					//     }
+    					// ]
+    					//
+    					// Note: specifying highlightTheme without a theme will change the code highlight theme while leaving the presentation theme unchanged.
+    					themes: false,
+						
+    					// Specifies the path to the default theme files. If your presentation uses a different path to the standard reveal layout then you need to provide this option, but only when 'themes' is set to 'true'. If you provide your own list of themes or 'themes' is set to 'false' the 'themesPath' option is ignored.
+    					themesPath: 'dist/theme/',
+						
+    					// Specifies if the transitions menu panel will be shown. Set to 'true' to show the transitions menu panel with the default transitions list. Alternatively, provide an array to specify the transitions to make available in the transitions panel, for example... ['None', 'Fade', 'Slide']
+    					transitions: false,
+						
+    					// Adds a menu button to the slides to open the menu panel. Set to 'false' to hide the button.
+    					openButton: true,
+						
+    					// If 'true' allows the slide number in the presentation to open the menu panel. The reveal.js slideNumber option must be displayed for this to take effect
+    					openSlideNumber: false,
+						
+    					// If true allows the user to open and navigate the menu using the keyboard. Standard keyboard interaction with reveal will be disabled while the menu is open.
+    					keyboard: true,
+						
+    					// Normally the menu will close on user actions such as selecting a menu item, or clicking the presentation area. If 'true', the sticky option will leave the menu open until it is explicitly closed, that is, using the close button or pressing the ESC or m key (when the keyboard interaction option is enabled).
+    					sticky: false,
+						
+    					// If 'true' standard menu items will be automatically opened when navigating using the keyboard. Note: this only takes effect when both the 'keyboard' and 'sticky' options are enabled.
+    					autoOpen: true,
+						
+    					// If 'true' the menu will not be created until it is explicitly requested by calling RevealMenu.init(). Note this will delay the creation of all menu panels, including custom panels, and the menu button.
+    					delayInit: false,
+						
+    					// If 'true' the menu will be shown when the menu is initialised.
+    					openOnInit: false,
+						
+    					// By default the menu will load it's own font-awesome library icons. If your presentation needs to load a different font-awesome library the 'loadIcons' option can be set to false and the menu will not attempt to load the font-awesome library.
+    					loadIcons: true
+  					},
+					  chalkboard: {
+        				boardmarkerWidth: 3,
+        				chalkWidth: 7,
+        				chalkEffect: 1.0,
+        				storage: null,
+        				src: null,
+        				readOnly: false,
+        				messageType: 'broadcast',
+        				toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+        				toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+        				colorButtons: true,
+        				boardHandle: true,
+        				transition: 800,
+        				theme: "whiteboard",
+        				background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+        				grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        				eraser: { src: path + 'img/sponge.png', radius: 20},
+        				boardmarkers : [
+        				        { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+        				        { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+        				        { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+        				        { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+        				        { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+        				        { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+        				],
+        				chalks: [
+        				        { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+        				        { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+        				        { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+        				        { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+        				        { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+        				        { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+        				]
+    				},					
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAudioSlideshow, RevealAudioRecorder, RevealMenu, RevealChalkboard ]
+			});
+		</script>
+	</body>
+</html>

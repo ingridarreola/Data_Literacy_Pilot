@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Maîtrise des données - Cours 3</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown id="class-three" data-menu-title="Leçon du jour : Encodage visuel" data-audio-text="test"> 
+					<script type="text/template">
+					# Dans Ce Cours, Nous Couvrirons -- <!-- .element: class="r-fit-text"-->
+					- Que se passe-t-il dans ce graphique? (What's Going on In This Graph?)
+					- Révision : Qu'est-ce qu'une bonne visualisation
+					- Plus d'informations sur l'encodage visuel <!-- .element: class="fragment" -->
+					- Comment trouver la bonne forme graphique? <!-- .element: class="fragment" -->
+					- Poser des bonnes questions est essentiel pour l'alphabétisation des données <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="graph_class3" data-menu-title="Qu'est-ce qui se passe dans ce graphique?">
+					<script type="text/template">
+						<sup><sub> 1. Que remarquez-vous? </sub></sup>
+						<sup><sub> 2. Qu'est-ce qui vous interpelle? </sub></sup>
+
+						<sup><sub> 3. Comment cela se rapporte-t-il à vous et à votre communauté? 4. Que se passe-t-il dans ce graphique? Bonus ➡️  Créez un titre accrocheur qui capture l'idée principale de la carte. </sub></sup>  <!-- .element: class="fragment" -->
+
+						<sup><sub>Source: New York Times</sub></sup>
+	
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class3%20-%20Net-Worth-Age-1.png?raw=true' height="65%" width="65%" alt="graph of voter interests by age group">
+						
+						notes: pour bien lire un graphique, concentrez-vous sur les éléments qui l'entourent -- l'échafaudage du graphique -- comme les titres, légendes, échelles. Ici, nous voyons plusieurs exemples d'échafaudage avec le contexte près de la flèche, les couleurs utilisées avec les titres et le texte plus grand pour les années
+					</script>
+				</section>
+				<section data-markdown id="graph_class3-scaffolding" data-menu-title="Qu'est-ce qui se passe dans ce graphique - Échafaudage">
+					<script type="text/template">
+						<sup><sub> Comment la valeur nette a-t-elle évolué au fil du temps pour les différentes générations? </sub></sup> <!-- .element: class="fragment" --> <sup><sub> L'échafaudage (les éléments qui entourent le graphique) vous aide-t-il à comprendre le graphique? </sub></sup> <!-- .element: class="fragment" -->
+	
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class3%20-%20Net-Worth-Age-2.png?raw=true' height="55%" width="55%" alt="graph of voter interests by age group">
+						
+						<sup><sub> Adapté de l’article de 2020 “[L’Amérique va lutter après le coronavirus. Ces graphiques montrent pourquoi.](https://www.nytimes.com/interactive/2020/04/10/opinion/coronavirus-us-economy-inequality.html)" </sub></sup>
+
+						notes: pour bien lire un graphique, concentrez-vous sur les éléments qui l'entourent - l'échafaudage du graphique - comme les titres, les légendes, les échelles. Ici, nous voyons un exemple d'échafaudage avec le contexte près de la flèche.
+					</script>
+				</section>
+
+
+				<section data-markdown id="review-question-3-exercise" data-menu-title="Rappel - Qu'est-ce que l'encodage visuel?">
+					<script type="text/template">
+						Prenez une feuille de papier ou un post-it et notez ce que vous vous souvenez <span style="color:orange">de l'encodage visuel</span> ➡️ quelle est une idée importante sur ce sujet? 
+	
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20sticky_note.png?raw=true' height="55%" width="55%" alt="recall_activity">
+						
+						<sup><sub> Photo par [Kelly Sikkema](https://unsplash.com/@kellysikkema) sur Unsplash </sub></sup>
+
+						notes: Faites le point avec les étudiants pour voir ce qu'ils ont transféré de la mémoire de travail à la mémoire à long terme. Demandez aux étudiants de noter les idées les plus importantes que vous avez abordées. Déplacez-vous dans la classe et vérifiez si les étudiants suivent les idées que vous enseignez. <br/> Si le temps le permet, demandez aux étudiants de se regrouper par groupes de 3 ou 4 pour comparer et discuter de ce qu'ils ont trouvé être les idées clés.
+					</script>
+				</section>
+				<section data-markdown id="review-question-3" data-menu-title="Revue - Qu'est-ce que l'encodage visuel?">
+					<script type="text/template">
+						Encodage Visuel des Données <!-- .element: class="r-fit-text"-->
+						<br/>
+						
+						- Cela fait référence au "contenu lui-même -- comment les données sont représentées"
+						- Nous représentons généralement, ou encodons, avec des formes et des symboles
+
+						notes: Ce sont les concepts principaux de l'encodage visuel que nous allons couvrir aujourd'hui et approfondir.
+					</script>
+				</section>
+				<section data-markdown id="visual-encoding-1" data-menu-title="Encodage visuel - Exemples">
+					<script type="text/template">
+						<sup><sub> - <span style="color:orange"> Longueur ou hauteur </span> ➡️  permet une estimation précise ➡️  position le long d'une échelle  </sub></sup> <!-- .element: class="fragment" -->
+						<sup><sub> - <span style="color:orange"> Position ou aire </span> ➡️  estimation moins précise ➡️  pas toujours alignée le long d'une échelle </sub></sup> <!-- .element: class="fragment" -->
+						<sup><sub> - <span style="color:orange"> Angle/aire ou teinte et nuance </span> ➡️  peut permettre des estimations générales ➡️  plus difficile de voir sa vraie valeur  </sub></sup> <!-- .element: class="fragment" -->
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/visual_encoding.png?raw=true' height="45%" width="55%" alt="visual_encoding"> 
+
+						notes: Cette image montre diverses façons d'encoder visuellement des données. La partie supérieure de ce graphique permet la plus grande précision. Notre capacité à estimer avec précision diminue à mesure que nous descendons dans l'image. Nous utilisons différentes formes d'encodage visuel en fonction du type de tâche que nous voulons effectuer.
+					</script>
+				</section>
+				<section data-markdown id="visual-encoding-2" data-menu-title="Encodage visuel - Exemple de longueur">
+					<script type="text/template">
+						<sup><sub> <span style="color:orange">Longueur ou hauteur</span> ➡️  le plus précis </sub></sup>
+
+						<sup><sub> - Pensez à un graphique à barres 📊 la longueur ou la hauteur correspond à une valeur ➡️  plus longue/plus haute = plus de valeur  </sub></sup> <!-- .element: class="fragment" -->
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%203%20-%20Length%20Encoding%20-%20DACA.png?raw=true' height="45%" width="55%" alt="length_visual_encoding">
+
+						<sup><sub> Source: New York Times  </sub></sup>
+
+						notes: Les exemples de graphiques utilisant la longueur ou la hauteur incluent les graphiques à barres. Il est plus facile pour nos yeux de comparer la longueur et de repérer les motifs ou tendances.
+					</script>
+				</section>				
+				<section data-markdown id="visual-encoding-3" data-menu-title="Encodage visuel - Exemple de surface">
+					<script type="text/template">
+						<sup><sub> <span style="color:orange"> Position ou aire </span> ➡️  estimation moins précise</sup></sub>
+
+						<sup><sub> - L'aire est une forme d'encodage visuel, courante dans les cartes </sup></sub> <!-- .element: class="fragment" -->
+						
+						<sup><sub> - Dans l'exemple ci-dessous, la taille du cercle correspond à la taille de la population, le texte indique également les bulles plus grandes avec de grands chiffres </sup></sub> <!-- .element: class="fragment" -->
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%203%20-%20Area%20Visual%20Encoding.png?raw=true' height="55%" width="55%" alt="area_visual_encoding"> 
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: Cette image est un exemple d'encodage par aire, qui est utilisé dans les cartes. Il est facile pour nos yeux de repérer les motifs ou tendances, cependant, si nous comparons une bulle à une autre, il est vraiment difficile de dire laquelle est plus grande ou de combien elle diffère.
+					</script>
+				</section>		
+				<section data-markdown id="visual-encoding-4" data-menu-title="Encodage visuel - Exemple de teinte/ombre">
+					<script type="text/template">
+						<sup><sub>  La couleur est également utilisée pour encoder les données ➡️   la <span style="color:orange"> teinte </span> = rouge/gris ➡️   <span style="color:orange"> la nuance de couleur </span> = plus claire/plus sombre </sup></sub> 
+
+						<sup><sub>  Nous pouvons voir des tendances de haut niveau, mais il est plus difficile de connaître leurs valeurs exactes </sup></sub>  <!-- .element: class="fragment" -->
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%203%20-%20Hue%20Encoding.png?raw=true' height="55%" width="55%" alt="shade_visual_encoding"> 
+
+						<sup><sub> Source: New York Times </sup></sub>
+
+						notes: La couleur est une autre forme populaire d'encodage des données. L'exemple ici montre à la fois la nuance, où une couleur plus claire indique moins de menace, et une couleur plus sombre indique une menace plus grande. Nous voyons également comment les variables qualitatives sont représentées avec différentes couleurs.  <br/> Par exemple, ici dans le comté de Marion, IN, il y a deux couleurs : orange pour le stress thermique et bleu pour les précipitations.  <br/> Nos yeux peuvent immédiatement voir que différentes parties du pays sont touchées par différentes menaces.
+					</script>
+				</section>		
+				<section data-markdown id="visual-encoding-5" data-menu-title="Encodage visuel - Le tour de fouet">
+					<script type="text/template">
+						<sup><sub>  Indiquez un _type d'encodage visuel_, sa _force_, une _faiblesse_, et, pour un défi supplémentaire, où vous avez vu un _exemple_ (école, en ligne, sur les médias sociaux, etc.) </sup></sub> 
+						<sup><sub>  Prenez une minute pour écrire votre réponse, puis nous partagerons tous </sup></sub>  <!-- .element: class="fragment" -->
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Whip%20Around.png?raw=true' height="25%" width="25%" alt="whip_around"> 
+
+						<sup><sub> Photo par [Tamanna Rumee](https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) </sup></sub>
+
+						notes: Dans cette activité 1. Posez une question ouverte qui peut susciter diverses réponses. <br/> 2. Donnez à vos étudiants une minute pour réfléchir à une réponse mentale ou écrite. <br/> 3. Appelez un étudiant pour répondre. Ensuite, demandez aux étudiants suivants de répondre dans l'ordre (c'est-à-dire en montant et en descendant les rangées). <br/> 4. N'interrompez pas le flux, y compris vous-même, avec des commentaires supplémentaires.
+					</script>
+				</section>		
+				<section data-markdown id="choosing-graphic-format-1" data-menu-title="Comment choisissons-nous le bon format graphique?">
+					<script type="text/template">
+						Comment choisissons-nous le bon format graphique?
+						1. Pensez à la tâche que vous souhaitez activer
+						2. Essayez différentes formes graphiques
+						3. Disposez les composants du graphique de manière à ce qu'il soit facile d'en tirer un sens
+						4. Testez les résultats vous-même et auprès du public cible
+
+						<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+
+						notes: Il n'y a pas nécessairement de réponse « correcte », car les différentes formes d'encodages visuels ont leurs forces et leurs faiblesses... cependant ces étapes nous aideront à choisir la forme la mieux adaptée à notre public ou à notre objectif.
+					</script>
+				</section>
+				<section data-markdown id="choosing-graphic-format-2" data-menu-title="Choisir le format graphique">
+					<script type="text/template">
+						1. Pensez à la tâche que vous souhaitez activer <br/>
+						<br/>	
+						- souhaitez-vous comparer des valeurs? <!-- .element: class="fragment" -->
+						- souhaitez-vous voir un changement? <!-- .element: class="fragment" -->
+						- souhaitez-vous mettre en évidence un motif ou une tendance particulière? <!-- .element: class="fragment" -->
+						- essayez-vous de révéler une connexion? <!-- .element: class="fragment" -->
+
+						<br/> <br/>
+
+						<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+						
+						notes: Tout d'abord, pensez à quel objectif le graphique ou la visualisation vise à atteindre. La structure détermine la fonction.
+					</script>
+				</section>
+				<section data-markdown id="choosing-graphic-format-3" data-menu-title="Tester différents formats graphiques">
+					<script type="text/template">
+						2. Essayez différentes formes graphiques <br/>
+						<br/>	
+						- Les graphiques varient avec leur encodage, en fonction de ce qu'ils essaient de représenter <!-- .element: class="fragment" -->
+						- Si vous souhaitez activer plus d'une tâche, vous devrez peut-être représenter les données de plusieurs manières <!-- .element: class="fragment" -->
+						- Il est utile de construire différentes représentations pour voir ce qui fonctionne/ce qui ne fonctionne pas <!-- .element: class="fragment" -->
+
+						<br/><br/>
+
+						<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+						
+						notes: C'est là que le plaisir commence. L'exploration des données est une partie intégrante du choix de la bonne forme. Cela signifie généralement créer et construire différentes vues avant d'arriver à celle qui convient le mieux à votre objectif.
+					</script>
+				</section>
+				<section data-markdown id="choosing-graphic-format-4" data-menu-title="Organiser les formats graphiques">
+					<script type="text/template">
+						3. Organisez les composants du graphique pour faciliter la compréhension <br/>
+						<br/>
+						- Si c'est approprié, ajoutez de l'interactivité à une visualisation <!-- .element: class="fragment" -->
+						- Pensez à ce que vous pourriez vouloir mettre en évidence ou attirer l'attention <!-- .element: class="fragment" -->
+						- L'échafaudage est utile pour que le public comprenne <!-- .element: class="fragment" -->
+
+						<br/><br/>
+						<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+						
+						notes: C'est là que le plaisir commence. L'exploration des données est une partie intégrante du choix de la bonne forme. Cela signifie généralement créer et construire différentes vues avant d'arriver à celle qui convient le mieux à votre objectif.
+					</script>
+				</section>
+				<section data-markdown id="choosing-graphic-format-5" data-menu-title="Tester les formats graphiques">
+					<script type="text/template">
+						4. Testez les résultats vous-même et avec le public cible <br/>
+						<br/>
+						- Montrez-le à votre public <!-- .element: class="fragment" -->
+						- S'il est interactif, testez-le et voyez ce que vous apprenez <!-- .element: class="fragment" -->
+						- Ce qui se passe dans cet exercice de graphique est un exemple parfait de questions que vous pouvez poser ➡️ Qu'observez-vous? Qu'est-ce qui vous intrigue? <!-- .element: class="fragment" -->
+
+						<br/><br/>
+						<sup><sub>Source: Alberto Cairo, *The Truthful Art*</sub></sup>
+
+						notes: C'est là que vous pouvez partager votre travail. Vous pouvez observer comment les gens interagissent avec la visualisation. Comprenez ce qui pourrait manquer, ce qui fonctionne très bien, et obtenez des commentaires sur la manière de l'améliorer.
+					</script>
+				</section>
+				<section data-markdown id="choosing-graphic-format-activity" data-menu-title="Choisir le bon format graphique - Activité">
+					<script type="text/template">
+						Le point le plus confus d'une minute
+						- Notez ce qui vous embrouille
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20muddiest%20point%20activity%20-%20option%202.png?raw=true' height="25%" width="25%" alt="muddy"> 
+
+						<sup><sub> Photo par [charlesdeluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/s/photos/confused?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</sub></sup>
+
+						notes: Il s'agit d'une activité pour donner aux étudiants une courte pause et réfléchir aux diapositives précédentes sur l'encodage visuel. Demandez aux étudiants de noter ce qui les embrouille. Ensuite, discutons pour voir si nous pouvons clarifier les concepts que nous venons de couvrir.
+					</script>
+				</section>
+
+
+		<!-- Include the class links at end of each presentation -->
+				<section data-menu-title="Liens de la classe">
+					<h3>Liens de la classe</h3>
+					<ul>
+					  <li><a href="index.html">Voir les autres cours</a></li>
+					</ul>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/audio-slideshow/plugin.js"></script>
+		<script src="plugin/audio-slideshow/recorder.js"></script>
+		<script src="plugin/audio-slideshow/RecordRTC.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				history: true,
+				slideNumber: 'c/t',
+				loop: true,
+				transition: 'fade',
+				audio: {
+						prefix: 'audio/', 	// audio files are stored in the "audio" folder
+						suffix: '.ogg',		// audio files have the ".ogg" ending
+						textToSpeechURL: "http://api.voicerss.org/?key=23816d453df4488b81c197d547505c72&hl=en-gb&c=ogg&src=",  // the URL to the text to speech converter
+						defaultNotes: false, 	// use slide notes as default for the text to speech converter
+						defaultText: true, 	// use slide text as default for the text to speech converter
+						advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+						autoplay: false,	// automatically start slideshow
+						defaultDuration: 5,	// default duration in seconds if no audio is available
+						defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+						playerOpacity: 0.05,	// opacity value of audio player if unfocused
+						playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+						startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+					},
+				menu: {
+    					// Specifies which side of the presentation the menu will be shown. Use 'left' or 'right'.
+    					side: 'left',
+
+    					// Specifies the width of the menu. Can be one of the following: 'normal', 'wide', 'third', 'half', 'full', or any valid css length value
+    					width: 'normal',
+
+    					// Add slide numbers to the titles in the slide list. Use 'true' or format string (same as reveal.js slide numbers)
+    					numbers: false,
+
+    					// Specifies which slide elements will be used for generating the slide titles in the menu. The default selects the first heading element found in the slide, but you can specify any valid css selector and the text from the first matching element will be used. Note: that a section data-menu-title attribute or an element with a menu-title class will take precedence over this option
+    					titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+    					// If slides do not have a matching title, attempt to use the start of the text content as the title instead
+    					useTextContentForMissingTitles: false,
+
+    					// Hide slides from the menu that do not have a title. Set to 'true' to only list slides with titles.
+    					hideMissingTitles: false,
+
+    					// Adds markers to the slide titles to indicate the progress through the presentation. Set to 'false' to hide the markers.
+    					markers: true,
+
+    					// Specify custom panels to be included in the menu, by providing an array of objects with 'title', 'icon' properties, and either a 'src' or 'content' property.
+    					custom: false,
+
+    					// Specifies the themes that will be available in the themes menu panel. Set to 'true' to show the themes menu panel with the default themes list. Alternatively, provide an array to specify the themes to make available in the themes menu panel, for example...
+    					// [
+    					//     { name: 'Black', theme: 'dist/theme/black.css' },
+    					//     { name: 'White', theme: 'dist/theme/white.css' },
+    					//     { name: 'League', theme: 'dist/theme/league.css' },
+    					//     {
+    					//       name: 'Dark',
+    					//       theme: 'lib/reveal.js/dist/theme/black.css',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/monokai.css'
+    					//     },
+    					//     {
+    					//       name: 'Code: Zenburn',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/zenburn.css'
+    					//     }
+    					// ]
+    					//
+    					// Note: specifying highlightTheme without a theme will change the code highlight theme while leaving the presentation theme unchanged.
+    					themes: false,
+						
+    					// Specifies the path to the default theme files. If your presentation uses a different path to the standard reveal layout then you need to provide this option, but only when 'themes' is set to 'true'. If you provide your own list of themes or 'themes' is set to 'false' the 'themesPath' option is ignored.
+    					themesPath: 'dist/theme/',
+						
+    					// Specifies if the transitions menu panel will be shown. Set to 'true' to show the transitions menu panel with the default transitions list. Alternatively, provide an array to specify the transitions to make available in the transitions panel, for example... ['None', 'Fade', 'Slide']
+    					transitions: false,
+						
+    					// Adds a menu button to the slides to open the menu panel. Set to 'false' to hide the button.
+    					openButton: true,
+						
+    					// If 'true' allows the slide number in the presentation to open the menu panel. The reveal.js slideNumber option must be displayed for this to take effect
+    					openSlideNumber: false,
+						
+    					// If true allows the user to open and navigate the menu using the keyboard. Standard keyboard interaction with reveal will be disabled while the menu is open.
+    					keyboard: true,
+						
+    					// Normally the menu will close on user actions such as selecting a menu item, or clicking the presentation area. If 'true', the sticky option will leave the menu open until it is explicitly closed, that is, using the close button or pressing the ESC or m key (when the keyboard interaction option is enabled).
+    					sticky: false,
+						
+    					// If 'true' standard menu items will be automatically opened when navigating using the keyboard. Note: this only takes effect when both the 'keyboard' and 'sticky' options are enabled.
+    					autoOpen: true,
+						
+    					// If 'true' the menu will not be created until it is explicitly requested by calling RevealMenu.init(). Note this will delay the creation of all menu panels, including custom panels, and the menu button.
+    					delayInit: false,
+						
+    					// If 'true' the menu will be shown when the menu is initialised.
+    					openOnInit: false,
+						
+    					// By default the menu will load it's own font-awesome library icons. If your presentation needs to load a different font-awesome library the 'loadIcons' option can be set to false and the menu will not attempt to load the font-awesome library.
+    					loadIcons: true
+  					},
+					  chalkboard: {
+        				boardmarkerWidth: 3,
+        				chalkWidth: 7,
+        				chalkEffect: 1.0,
+        				storage: null,
+        				src: null,
+        				readOnly: false,
+        				messageType: 'broadcast',
+        				toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+        				toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+        				colorButtons: true,
+        				boardHandle: true,
+        				transition: 800,
+        				theme: "whiteboard",
+        				background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+        				grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        				eraser: { src: path + 'img/sponge.png', radius: 20},
+        				boardmarkers : [
+        				        { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+        				        { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+        				        { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+        				        { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+        				        { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+        				        { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+        				],
+        				chalks: [
+        				        { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+        				        { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+        				        { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+        				        { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+        				        { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+        				        { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+        				]
+    				},					
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAudioSlideshow, RevealAudioRecorder, RevealMenu, RevealChalkboard ]
+			});
+		</script>
+	</body>
+</html>
