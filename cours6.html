@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Maîtrise des données - Cours 6</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown id="class-six" data-menu-title="Leçon du jour : Comment les graphiques mentent"> 
+					<script type="text/template">
+					# In this class, we will cover -- <!-- .element: class="r-fit-text"-->
+					- Que se passe-t-il dans ce graphique? <!-- .element: class="fragment" -->
+					- Revue : Comment les graphiques mentent ➡️ 1. Mauvaise conception <!-- .element: class="fragment" -->
+					- Comment les graphiques mentent <!-- .element: class="fragment" -->
+						2. Utilisation de mauvaises données <!-- .element: class="fragment" -->
+					</script>
+				</section>
+				<section data-markdown id="graph_class6" data-menu-title="Que se passe-t-il dans ce graphique?">
+					<script type="text/template">
+						<sup><sub> 1. Que remarquez-vous? </sub></sup>
+						<sup><sub> 2. Qu'est-ce qui vous interpelle? </sub></sup>
+						<sup><sub> 3. Comment cela se rapporte-t-il à vous et à votre communauté? </sub></sup>  <sup><sub> 4. Que se passe-t-il dans ce graphique? </sub></sup>
+
+						<sup><sub>[Source: New York Times](https://www.nytimes.com/2022/03/24/learning/whats-going-on-in-this-graph-march-30-2022.html)</sub></sup>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/Inflation_WordCloud_NYT.png?raw=true' height="50%" width="50%" alt="inflation_wordcloud">
+						
+						notes: Ce nuage de mots a été produit par le New York Times à l'aide de données d'enquête collectées par Morning Consult à la mi-février. Environ 2 200 personnes ont été interrogées pour citer des produits et services spécifiques dont les prix plus élevés les ont marqués au cours de l'année écoulée. Seuls les articles ayant reçu sept réponses ou plus sont présentés ici.  <br/> Comment l'encodage des couleurs est-il utilisé dans ce graphique ? Que remarquez-vous et vous interrogez-vous sur ces listes ?
+					</script>
+				</section>
+                <section data-markdown id="recall-bad-design" data-menu-title="Activité de rappel - Mauvaise conception">
+					<script type="text/template">
+						<sup><sub> Travaillez ensemble en binômes ou en petits groupes. Tout d'abord, vous _réfléchirez_ silencieusement un moment et noterez votre réponse. Ensuite, vous vous _associez pour _partager_ vos idées avec votre partenaire. Ensuite, vous _partagez_ les idées de votre groupe avec le groupe plus large. </sup></sub>
+
+						<sup><sub> - Expliquez pourquoi il est possible qu'un graphique mente, et ce qui pourrait mal tourner si <span style="color:orange">les graphiques sont mal conçus</span>. Fournissez des exemples. </sup></sub> <!-- .element: class="fragment" -->
+						
+						<sup><sub> Photo par [Marvin Meyer](https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/) </sub></sup>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Group%20Activity%20-%20marvin-meyer.png?raw=true' height="35%" width="35%" alt="recall_activity">
+
+
+						notes: La réflexion en binôme peut être utilisée avec n'importe quelle question qui fait réfléchir les élèves, ici cette question vise à revoir la leçon précédente qui a montré divers exemples de la façon dont les graphiques peuvent être mal conçus. <br/> Les distorsions visuelles peuvent rendre difficile la lecture appropriée d'un graphique ➡️ les distorsions de graphique sont généralement le résultat de manipulations avec les échelles et les proportions
+						</script>
+				</section>
+				<section id="absolute" class="test" data-menu-title="test">
+
+						<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/ShiftingPopulationGraph_NYT_Graph_of_Day.png?raw=true" class="absolute" style="top: 200px; left: 0px; width: 350px; height: 300px; "></p>
+
+						<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%201.png?raw=true" class="absolute" style="top: 50px; right: 50px; width: 450px; height: 250px; "></p>
+
+						<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class3%20-%20Net-Worth-Age-1.png?raw=true" class="absolute" style="bottom: 100px; right: 100px; width: 300px; height: 300px; "></p>
+
+				</section>
+				<section id="stack" class="test-2" data-menu-title="Revue : Comment les graphiques mentent ➡️ Mauvaise conception">
+					<sub> il est encore possible qu'un graphique mente car : <span style="color:orange">  il est mal conçu </span> </sub>
+					<br/>
+					<sub> ➡️ Les distorsions visuelles peuvent rendre difficile la lecture appropriée d'un graphique  <br/> ➡️ Les distorsions de graphique sont généralement le résultat de manipulations avec les échelles et les proportions</sub>
+
+					<div class="r-stack">
+					<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%202.png?raw=true" class="fragment" width="550" height="300""></p>
+
+					<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%203.png?raw=true" class="fragment" swidth="550" height="300""></p>
+
+					<p><img data-src="https://github.com/ingridarreola/Data-Literacy/blob/master/assets/007%20-%20Data%20Literacy%20-%20Class%205%20-%20Charts%20Lie%20Poor%20Design%20-%20Remade.png?raw=true" class="fragment" width="650" height="300""></p>
+
+					<aside class="notes"> Nous nous sommes concentrés sur l'apprentissage de la lecture des graphiques. Bien que tous ces éléments constituent les bases de la littératie des données, il est important de savoir qu'il est encore possible qu'un graphique mente pour plusieurs raisons. La dernière fois, nous avons passé en revue plusieurs exemples montrant comment une mauvaise conception peut conduire à des graphiques trompeurs. </aside>
+
+				</div>
+			</section>
+				<section data-markdown id="how-charts-lie-1" data-menu-title="Portez attention aux graphiques">
+				<script type="text/template">
+					<sup><sub> Maintenant que nous avons passé en revue comment lire un graphique, il est également important de savoir que: </sup></sub>
+
+					<sup><sub> "Tout graphique, aussi bien conçu soit-il, nous induira en erreur si nous n'y prêtons pas attention." </sup></sub>
+
+					
+					<sup><sub> Source: Alberto Cairo, *The Truthful Art* </sup></sub>
+
+					notes: "Que se passe-t-il après que nous ayons prêté attention à un graphique ? Nous devons être capables de le lire. Avant d'apprendre comment les graphiques mentent, nous devons apprendre comment ils sont censés fonctionner lorsqu'ils sont correctement construits." (Alberto Cairo, _The Truthful Art_, pg 21)
+					</script>
+				</section>
+				<section data-markdown id="how-charts-lie-2" data-menu-title="Comment les graphiques mentent?">
+					<script type="text/template">
+	
+					Nous avons pratiqué l'apprentissage de la lecture des graphiques. Malgré cela, il est toujours possible qu'un graphique mente parce que:
+							
+					- Il est mal conçu <!-- .element: class="fragment" --> 
+					<br/>
+					- Il utilise de mauvaises données <!-- .element: class="fragment" -->
+					- Il montre une quantité inappropriée de données -- soit trop peu, soit trop <!-- .element: class="fragment" -->
+					- Il cache ou confond l'incertitude <!-- .element: class="fragment" -->
+					- Il suggère des modèles trompeurs <!-- .element: class="fragment" -->
+					- Il cède à nos attentes ou préjugés <!-- .element: class="fragment" -->
+						
+					<sup><sub> Source: Alberto Cairo, *The Truthful Art* </sup></sub>
+	
+					notes: Nous nous sommes concentrés sur l'apprentissage de la lecture des graphiques. Bien que tous ces éléments constituent les bases de la littératie des données, il est important de savoir qu'il est encore possible qu'un graphique mente pour plusieurs raisons. Nous allons détailler chacune de ces raisons dans cette classe.
+					</script>
+				</section>
+				<section data-markdown id="how-charts-lie-3" data-menu-title="Comment les graphiques mentent? - 2. Affichage de données douteuses">
+					<script type="text/template">
+		
+						Comment les graphiques mentent Partie 2: car ils utilisent de mauvaises données
+								
+						- La première chose à vérifier est si l'auteur identifie les sources... si ce n'est pas le cas, c'est un signal d'alarme<!-- .element: class="fragment" -->
+						- Méfiez-vous de toute publication qui ne mentionne pas clairement ou ne lie pas la source de l'histoire qui est publiée <!-- .element: class="fragment" -->
+						- Lorsque vous lisez des graphiques, il est très important de vérifier ce qui est compté et comment cela est compté <!-- .element: class="fragment" -->
+						
+	
+						notes: Il est possible qu'un graphique mente car il utilise de mauvaises données. Lorsque vous regardez un graphique, prenez un moment pour chercher une source identifiée près du graphique. Ensuite, examinez ce qui est compté et comment cela est compté. Les mêmes chiffres peuvent transmettre deux messages opposés, selon la manière dont ils sont manipulés.
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-4" data-menu-title="Données douteuses - Suite">
+					<script type="text/template">
+		
+						Lorsque vous lisez des graphiques, il est très important de vérifier *ce qui* est compté et *comment* cela est compté
+								
+						<sup><sub> - Lorsque la pandémie de coronavirus a commencé au début de 2020, nous avons vu de nombreux exemples de propagation du virus <!-- .element: class="fragment" --> </sup></sub>	
+						<sup><sub> - Le nombre de cas de coronavirus est ce qui était compté et comment cela était compté diffère selon que vous visualisez les données sur une échelle linéaire ou logarithmique <!-- .element: class="fragment" --> </sup></sub>	
+						<sup><sub> - Une échelle linéaire trace des chiffres linéairement ➡️ 1,2,3,4, etc. Une échelle logarithmique trace des chiffres où chaque nombre augmente d'un certain nombre, par exemple 10, par rapport au précédent ➡️ 1, 10, 100, 1000, 10000, etc. <!-- .element: class="fragment" --> </sup></sub>				
+	
+						notes: 
+					</script>
+				</section>
+				<section data-markdown id="how-charts-lie-5" data-menu-title="Exemple de données douteuses">
+					<script type="text/template">
+		
+						<sup><sub> Lorsque vous lisez des graphiques, il est très important de vérifier _ce qui_ est compté et _comment_ cela est compté </sup></sub>
+								
+						<sup><sub> - Quelles différences observez-vous dans la manière dont le nombre de cas de coronavirus est compté? (c'est-à-dire l'axe des y) et comment cela impacte-t-il ce qui est montré sur le graphique? <!-- .element: class="fragment" --> </sup></sub>	
+						
+						<img data-src='https://raw.githubusercontent.com/ingridarreola/Data-Literacy/970d409ca8fabae415e2a4a562c3325d4f0b2436/assets/007%20-%20Data%20Literacy%20-%20Class%206%20-%20Charts%20Lie%20Dubious%20Data%20Logarithmic%20Versus%20Linear.png' height="65%" width="65%" alt="dubious_data_log"> 
+	
+						<sup><sub>Source: [New York Times](https://www.nytimes.com/2020/03/20/health/coronavirus-data-logarithm-chart.html)</sub></sup>
+
+						notes: Cette courbe, tracée de manière linéaire, est une courbe ascendante. Tracée de manière logarithmique, cependant, elle se transforme en une ligne droite, ce qui signifie que les écarts par rapport à la propagation exponentielle du virus deviennent beaucoup plus faciles à discerner. Présentée de cette manière, les données pour l'Italie montrent clairement que le taux d'infection n'est plus exponentiel. La ligne droite est maintenant une légère courbe descendante, ce qui indique que le taux d'augmentation ralentit. <br/> - Le graphique sur le côté droit montre l'échelle logarithmique et révèle comment, bien que initialement le taux de propagation semble être le même, avec le temps, le taux américain continue d'augmenter tandis que le taux de propagation de l'Italie cesse de suivre une tendance à la hausse et commence à fléchir
+						</script>
+				</section>
+				<section data-markdown id="how-charts-lie-6" data-menu-title="Équilibre des données">
+					<script type="text/template">
+		
+						Les chiffres peuvent donner lieu à plusieurs interprétations et ils peuvent être abordés sous différents angles -- c'est pourquoi les lecteurs de graphiques doivent rester vigilants car même le créateur de graphiques le plus honnête commet des erreurs
+	
+
+						notes: Rappelez-vous que lors de la lecture des graphiques, il est très important de vérifier _ce qui_ est compté et _comment_ cela est compté. Comme les chiffres peuvent être interprétés sous différents angles, la manière dont ils sont représentés peut être abordée de différentes façons. C'est pourquoi il nous appartient d'être vigilants. Revoyons le processus de lecture d'un graphique 📊 ➡️ lisez-le attentivement, regardez qui l'a publié, si vous pouvez visiter la source primaire, faites-le. S'il y a des doutes sur le graphique ou l'histoire, ne le partagez pas et soyez méfiant de la consommation d'informations provenant de cette source.
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-2-guideline" data-menu-title="Comment les graphiques mentent? - 2. Utilisation de mauvaises données">
+					<script type="text/template">
+						<sup><sub> Comment les graphiques mentent Partie 2: car ils utilisent de mauvaises données </sup></sub>
+
+						<sup><sub> Prenez une minute pour noter ce que vous avez compris des dernières diapositives de cette leçon <!-- .element: class="fragment" -->  </sup></sub>
+
+						<img data-src='https://github.com/ingridarreola/Data-Literacy/blob/master/assets/one_minute_summary.png?raw=true' height="20%" width="20%" alt="dubious_data_log"> 
+
+						<sup><sub> Photo par [Gaelle Marcel](https://unsplash.com/@gaellemarcel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) sur [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) </sub></sup>
+
+						notes: Il s'agit d'une activité pour accorder aux élèves une courte pause et réfléchir aux dernières diapositives sur l'encodage visuel. Demandez aux élèves de noter ce qui les embrouille. Ensuite, discutons pour voir si nous pouvons clarifier les concepts que nous venons de couvrir.  <br/> Prenez une minute pour que les élèves rédigent un résumé des dernières diapositives que nous venons de passer en revue.
+
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-3-guideline" data-menu-title="Comment les graphiques mentent? - 3. Quantité de données incorrecte">
+					<script type="text/template">
+						<sup><sub> Comment les graphiques mentent Partie 3 </sup></sub>
+
+						<sup><sub> 3️⃣ Il est possible qu'un graphique mente car ➡️ il utilise une quantité inappropriée de données ➡️ soit trop peu, soit trop </sup></sub>
+
+						<sup><sub> - Les graphiques, seuls, ne prouvent rarement un point parce qu'aucun graphique ne peut capturer toute la richesse d'un sujet ou d'un domaine exploré <!-- .element: class="fragment" --> </sup></sub>
+								
+						<sup><sub> -  Les graphiques peuvent être améliorés ou aggravés par la capacité de trouver un équilibre entre la simplification excessive du sujet ou son occultation par trop de détails <!-- .element: class="fragment" --> </sup></sub> 
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-4-guideline" data-menu-title="Comment les graphiques mentent? - 4. Cache ou confond l'incertitude">
+					<script type="text/template">
+						<sup><sub> Comment les graphiques mentent Partie 4 </sup></sub>
+
+						<sup><sub> 4️⃣ Il est possible qu'un graphique mente car ➡️ il cache ou confond l'incertitude </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-5-guideline" data-menu-title="Comment les graphiques mentent? - 5. Modèles trompeurs">
+					<script type="text/template">
+						<sup><sub> Comment les graphiques mentent Partie 5 </sup></sub>
+
+						<sup><sub> 5️⃣ Il est possible qu'un graphique mente car ➡️ il suggère des modèles trompeurs </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+                <section data-markdown id="how-charts-lie-6-guideline" data-menu-title="Comment les graphiques mentent? - 6. Renforce les préjugés">
+					<script type="text/template">
+						<sup><sub> Comment les graphiques mentent Partie 6 </sup></sub>
+
+						<sup><sub> 6️⃣ Il est possible qu'un graphique mente car ➡️ il cède à nos attentes ou préjugés </sup></sub>
+
+						<sup><sub> Source: Alberto Cairo, *How Charts Lie* </sup></sub>
+
+						notes: 
+						</script>
+				</section>
+
+
+                <!-- Include the class links at end of each presentation -->
+				<section data-menu-title="Liens de classe">
+					<h3>Liens de classe</h3>
+					<ul>
+					  <li><a href="index.html">Voir les autres cours</a></li>
+					</ul>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/audio-slideshow/plugin.js"></script>
+		<script src="plugin/audio-slideshow/recorder.js"></script>
+		<script src="plugin/audio-slideshow/RecordRTC.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<link rel="stylesheet" href="plugin/menu/menu.css">
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				history: true,
+				slideNumber: 'c/t',
+				loop: true,
+				transition: 'fade',
+				audio: {
+						prefix: 'audio/', 	// audio files are stored in the "audio" folder
+						suffix: '.ogg',		// audio files have the ".ogg" ending
+						textToSpeechURL: "http://api.voicerss.org/?key=23816d453df4488b81c197d547505c72&hl=en-gb&c=ogg&src=",  // the URL to the text to speech converter
+						defaultNotes: false, 	// use slide notes as default for the text to speech converter
+						defaultText: true, 	// use slide text as default for the text to speech converter
+						advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+						autoplay: false,	// automatically start slideshow
+						defaultDuration: 5,	// default duration in seconds if no audio is available
+						defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+						playerOpacity: 0.05,	// opacity value of audio player if unfocused
+						playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+						startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+					},
+				menu: {
+    					// Specifies which side of the presentation the menu will be shown. Use 'left' or 'right'.
+    					side: 'left',
+
+    					// Specifies the width of the menu. Can be one of the following: 'normal', 'wide', 'third', 'half', 'full', or any valid css length value
+    					width: 'normal',
+
+    					// Add slide numbers to the titles in the slide list. Use 'true' or format string (same as reveal.js slide numbers)
+    					numbers: false,
+
+    					// Specifies which slide elements will be used for generating the slide titles in the menu. The default selects the first heading element found in the slide, but you can specify any valid css selector and the text from the first matching element will be used. Note: that a section data-menu-title attribute or an element with a menu-title class will take precedence over this option
+    					titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+    					// If slides do not have a matching title, attempt to use the start of the text content as the title instead
+    					useTextContentForMissingTitles: false,
+
+    					// Hide slides from the menu that do not have a title. Set to 'true' to only list slides with titles.
+    					hideMissingTitles: false,
+
+    					// Adds markers to the slide titles to indicate the progress through the presentation. Set to 'false' to hide the markers.
+    					markers: true,
+
+    					// Specify custom panels to be included in the menu, by providing an array of objects with 'title', 'icon' properties, and either a 'src' or 'content' property.
+    					custom: false,
+
+    					// Specifies the themes that will be available in the themes menu panel. Set to 'true' to show the themes menu panel with the default themes list. Alternatively, provide an array to specify the themes to make available in the themes menu panel, for example...
+    					// [
+    					//     { name: 'Black', theme: 'dist/theme/black.css' },
+    					//     { name: 'White', theme: 'dist/theme/white.css' },
+    					//     { name: 'League', theme: 'dist/theme/league.css' },
+    					//     {
+    					//       name: 'Dark',
+    					//       theme: 'lib/reveal.js/dist/theme/black.css',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/monokai.css'
+    					//     },
+    					//     {
+    					//       name: 'Code: Zenburn',
+    					//       highlightTheme: 'lib/reveal.js/plugin/highlight/zenburn.css'
+    					//     }
+    					// ]
+    					//
+    					// Note: specifying highlightTheme without a theme will change the code highlight theme while leaving the presentation theme unchanged.
+    					themes: false,
+						
+    					// Specifies the path to the default theme files. If your presentation uses a different path to the standard reveal layout then you need to provide this option, but only when 'themes' is set to 'true'. If you provide your own list of themes or 'themes' is set to 'false' the 'themesPath' option is ignored.
+    					themesPath: 'dist/theme/',
+						
+    					// Specifies if the transitions menu panel will be shown. Set to 'true' to show the transitions menu panel with the default transitions list. Alternatively, provide an array to specify the transitions to make available in the transitions panel, for example... ['None', 'Fade', 'Slide']
+    					transitions: false,
+						
+    					// Adds a menu button to the slides to open the menu panel. Set to 'false' to hide the button.
+    					openButton: true,
+						
+    					// If 'true' allows the slide number in the presentation to open the menu panel. The reveal.js slideNumber option must be displayed for this to take effect
+    					openSlideNumber: false,
+						
+    					// If true allows the user to open and navigate the menu using the keyboard. Standard keyboard interaction with reveal will be disabled while the menu is open.
+    					keyboard: true,
+						
+    					// Normally the menu will close on user actions such as selecting a menu item, or clicking the presentation area. If 'true', the sticky option will leave the menu open until it is explicitly closed, that is, using the close button or pressing the ESC or m key (when the keyboard interaction option is enabled).
+    					sticky: false,
+						
+    					// If 'true' standard menu items will be automatically opened when navigating using the keyboard. Note: this only takes effect when both the 'keyboard' and 'sticky' options are enabled.
+    					autoOpen: true,
+						
+    					// If 'true' the menu will not be created until it is explicitly requested by calling RevealMenu.init(). Note this will delay the creation of all menu panels, including custom panels, and the menu button.
+    					delayInit: false,
+						
+    					// If 'true' the menu will be shown when the menu is initialised.
+    					openOnInit: false,
+						
+    					// By default the menu will load it's own font-awesome library icons. If your presentation needs to load a different font-awesome library the 'loadIcons' option can be set to false and the menu will not attempt to load the font-awesome library.
+    					loadIcons: true
+  					},
+					  chalkboard: {
+        				boardmarkerWidth: 3,
+        				chalkWidth: 7,
+        				chalkEffect: 1.0,
+        				storage: null,
+        				src: null,
+        				readOnly: false,
+        				messageType: 'broadcast',
+        				toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+        				toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+        				colorButtons: true,
+        				boardHandle: true,
+        				transition: 800,
+        				theme: "whiteboard",
+        				background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+        				grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        				eraser: { src: path + 'img/sponge.png', radius: 20},
+        				boardmarkers : [
+        				        { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+        				        { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+        				        { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+        				        { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+        				        { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+        				        { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+        				],
+        				chalks: [
+        				        { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+        				        { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+        				        { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+        				        { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+        				        { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+        				        { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+        				        { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+        				]
+    				},					
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAudioSlideshow, RevealAudioRecorder, RevealMenu, RevealChalkboard ]
+			});
+		</script>
+	</body>
+</html>
